@@ -1,0 +1,382 @@
+[
+  {
+    "type": "dag_range_all_op",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "dag_range_op",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "dag_range_post_op",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "dag_range_pre_op",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "difference_op",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "expression",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": false,
+      "types": [
+        {
+          "type": "children_op",
+          "named": true
+        },
+        {
+          "type": "dag_range_all_op",
+          "named": true
+        },
+        {
+          "type": "dag_range_op",
+          "named": true
+        },
+        {
+          "type": "dag_range_post_op",
+          "named": true
+        },
+        {
+          "type": "dag_range_pre_op",
+          "named": true
+        },
+        {
+          "type": "difference_op",
+          "named": true
+        },
+        {
+          "type": "intersection_op",
+          "named": true
+        },
+        {
+          "type": "negate_op",
+          "named": true
+        },
+        {
+          "type": "parents_op",
+          "named": true
+        },
+        {
+          "type": "primary",
+          "named": true
+        },
+        {
+          "type": "range_all_op",
+          "named": true
+        },
+        {
+          "type": "range_op",
+          "named": true
+        },
+        {
+          "type": "range_post_op",
+          "named": true
+        },
+        {
+          "type": "range_pre_op",
+          "named": true
+        },
+        {
+          "type": "union_op",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "function",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "function_arguments",
+          "named": true
+        },
+        {
+          "type": "strict_identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "function_arguments",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        },
+        {
+          "type": "keyword_argument",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "identifier",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "keyword_argument",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        },
+        {
+          "type": "strict_identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "negate_op",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "primary",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "at_op",
+          "named": true
+        },
+        {
+          "type": "expression",
+          "named": true
+        },
+        {
+          "type": "function",
+          "named": true
+        },
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "raw_string_literal",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        },
+        {
+          "type": "string_pattern",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "program",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "expression",
+          "named": true
+        },
+        {
+          "type": "program_modifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "program_modifier",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "pattern_kind_op",
+          "named": true
+        },
+        {
+          "type": "strict_identifier",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "range_all_op",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "range_op",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "range_post_op",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "range_pre_op",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "source_file",
+    "named": true,
+    "root": true,
+    "fields": {},
+    "children": {
+      "multiple": false,
+      "required": true,
+      "types": [
+        {
+          "type": "program",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "strict_identifier",
+    "named": true,
+    "fields": {}
+  },
+  {
+    "type": "string_pattern",
+    "named": true,
+    "fields": {},
+    "children": {
+      "multiple": true,
+      "required": true,
+      "types": [
+        {
+          "type": "identifier",
+          "named": true
+        },
+        {
+          "type": "pattern_kind_op",
+          "named": true
+        },
+        {
+          "type": "raw_string_literal",
+          "named": true
+        },
+        {
+          "type": "strict_identifier",
+          "named": true
+        },
+        {
+          "type": "string_literal",
+          "named": true
+        }
+      ]
+    }
+  },
+  {
+    "type": "\"\"\"",
+    "named": false
+  },
+  {
+    "type": "'''",
+    "named": false
+  },
+  {
+    "type": "(",
+    "named": false
+  },
+  {
+    "type": ")",
+    "named": false
+  },
+  {
+    "type": ",",
+    "named": false
+  },
+  {
+    "type": "..",
+    "named": false
+  },
+  {
+    "type": "::",
+    "named": false
+  },
+  {
+    "type": "=",
+    "named": false
+  },
+  {
+    "type": "at_op",
+    "named": true
+  },
+  {
+    "type": "children_op",
+    "named": true
+  },
+  {
+    "type": "intersection_op",
+    "named": true
+  },
+  {
+    "type": "parents_op",
+    "named": true
+  },
+  {
+    "type": "pattern_kind_op",
+    "named": true
+  },
+  {
+    "type": "raw_string_literal",
+    "named": true
+  },
+  {
+    "type": "string_literal",
+    "named": true
+  },
+  {
+    "type": "union_op",
+    "named": true
+  },
+  {
+    "type": "~",
+    "named": false
+  }
+]
