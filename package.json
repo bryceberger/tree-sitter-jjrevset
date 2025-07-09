@@ -4,6 +4,7 @@
   "description": "Tree-sitter grammar for jj revsets",
   "repository": "https://github.com/bryceberger/tree-siter-jjrevset",
   "license": "MIT",
+  "type": "module",
   "author": {
     "name": "Bryce Berger",
     "email": "bryce.z.berger@gmail.com"
@@ -32,6 +33,7 @@
   },
   "devDependencies": {
     "prebuildify": "^6.0.1",
+    "prettier": "^3.6.2",
     "tree-sitter-cli": "^0.25.4"
   },
   "peerDependencies": {
